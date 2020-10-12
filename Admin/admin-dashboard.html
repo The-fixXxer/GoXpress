@@ -1,0 +1,461 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GO-Xpress - Admin.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/brand/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/brand/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/brand/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/brand/site.webmanifest">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/slicknav.css">
+    <link rel="stylesheet" href="../assets/css/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/extra-styles.css">
+    <script src="//code.jivosite.com/widget/nTCTziZoH4" async></script>
+
+    <link rel="stylesheet" href="../assets/css/admin-table-styles.css">
+    
+    <style type="text/css">
+    html {
+    scroll-behavior: smooth;
+    }
+    </style>
+  </head>
+  <body>
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="preloader-circle"></div>
+          <div class="preloader-img pere-text">
+            <img src="../assets/img/logo/GOxpressLogo_black.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+      <!-- Header Start -->
+      <div class="header-area">
+        <div class="main-header ">
+          <div class="header-top d-none d-lg-block">
+            <div class="container">
+              <div class="col-xl-12">
+                <div class="row d-flex justify-content-between align-items-center">
+                  <div class="header-info-left">
+                    <ul>
+                      <li>< NUMBER OF CLIENTS ></li>
+                      <li>< [NUMBER] PENDING PASSELS ></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-bottom  header-sticky">
+            <div class="container">
+              <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-xl-2 col-lg-2">
+                  <div class="logo">
+                    <a href="index.html"><img src="../assets/img/logo/GOxpressLogo.png" class="logo-sizer" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-xl-10 col-lg-10">
+                  <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                    <!-- Main-menu -->
+                    <div class="main-menu d-none d-lg-block">
+                      <nav>
+                        <ul id="navigation">
+                          <!-- <li><a href="index.html"></a></li>
+                          <li><a href="about.html"></a></li>
+                          <li><a href="services.html"></a></li> -->
+                          
+                          <li><a></a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <!-- Header-btn / Button trigger modal -->
+                    <div class="header-right-btn d-none d-lg-block ml-20">
+                      <a href="#" class="btn header-btn" data-toggle="modal" data-target="#addclientmodal">Add New Client</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="col-12">
+                  <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+    </header>
+    <main>
+      <!--? slider Area Start-->
+      <div class="slider-area ">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="../assets/img/hero/about.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="hero-cap">
+                  <h2>Admin Dashboard</h2>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Admin Dashboard</a></li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slider Area End-->
+      <!--? Categories Area Start -->
+      <div class="categories-area section-padding30">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- Section Title -->
+              <div class="section-tittle text-center mb-80">
+                <span>All Client Bookings</span>
+                <h2>All Your Clients are Listed Below</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 table-responsive" style="height: 40vh;">
+              <table class="table table table-hover col-lg-12 col-md-12 col-sm-12">
+                <thead style="background-color: black; color: white;">
+                  <tr>
+                    <th >Tracking Code</th>
+                    <th >Sender</th>
+                    <th >Passel</th>
+                    <th >Location</th>
+                    <th >Status</th>
+                    <th >Shipped</th>
+                    <th >Arriving</th>
+                    <th >Options</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td>
+                      <div class="dropdown show" style="margin: 0 -10px 0 -10px;">
+                        <a class="dropdown-bg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Actions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#"><i class="fa fa-edit text-success mr-2" aria-hidden="true"></i>Edit</a>
+                          <a class="dropdown-item" href="#"><i class="fa fa-trash text-danger mr-2" aria-hidden="true"></i>Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td>
+                      <div class="dropdown show" style="margin: 0 -10px 0 -10px;">
+                        <a class="dropdown-bg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Actions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#"><i class="fa fa-edit text-success mr-2" aria-hidden="true"></i>Edit</a>
+                          <a class="dropdown-item" href="#"><i class="fa fa-trash text-danger mr-2" aria-hidden="true"></i>Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td>
+                      <div class="dropdown show" style="margin: 0 -10px 0 -10px;">
+                        <a class="dropdown-bg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Actions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#"><i class="fa fa-edit text-success mr-2" aria-hidden="true"></i>Edit</a>
+                          <a class="dropdown-item" href="#"><i class="fa fa-trash text-danger mr-2" aria-hidden="true"></i>Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td>
+                      <div class="dropdown show" style="margin: 0 -10px 0 -10px;">
+                        <a class="dropdown-bg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Actions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#"><i class="fa fa-edit text-success mr-2" aria-hidden="true"></i>Edit</a>
+                          <a class="dropdown-item" href="#"><i class="fa fa-trash text-danger mr-2" aria-hidden="true"></i>Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td >Text</td>
+                    <td>
+                      <div class="dropdown show" style="margin: 0 -10px 0 -10px;">
+                        <a class="dropdown-bg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Actions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#"><i class="fa fa-edit text-success mr-2" aria-hidden="true"></i>Edit</a>
+                          <a class="dropdown-item" href="#"><i class="fa fa-trash text-danger mr-2" aria-hidden="true"></i>Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td >Last</td>
+                    <td >Last</td>
+                    <td >Last</td>
+                    <td >Last</td>
+                    <td >Last</td>
+                    <td >Last</td>
+                    <td >Last</td>
+                    <td>
+                      <div class="dropdown show" style="margin: 0 -10px 0 -10px;">
+                        <a class="dropdown-bg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Actions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#"><i class="fa fa-edit text-success mr-2" aria-hidden="true"></i>Edit</a>
+                          <a class="dropdown-item" href="#"><i class="fa fa-trash text-danger mr-2" aria-hidden="true"></i>Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Button trigger modal -->
+            <div class="d-lg-block my-4 mx-auto">
+              <a href="#" class="btn header-btn" data-toggle="modal" data-target="#addclientmodal">Add New Client</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Categories Area End -->
+      <!-- Modal Starts Here -->
+      <!-- Modal -->
+      <div class="modal fade" id="addclientmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: black;">
+              <h3 class="modal-title" id="ModalLabel" style="color: #fd7e14;">Add New Client</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fd7e14;">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Tracking Code:</label>
+                  <input type="text" class="form-control" id="Tracking Code" value="Tracking ID" disabled>
+                </div>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Sender:</label>
+                  <input type="text" class="form-control" id="Sender">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Passel:</label>
+                  <input type="text" class="form-control" id="Passel">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Location:</label>
+                  <input type="text" class="form-control" id="Location">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Status:</label>
+                  <input type="text" class="form-control" id="Status">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Shipped:</label>
+                  <input type="date" class="form-control" id="Shipped">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Arriving:</label>
+                  <input type="date" class="form-control" id="Arriving">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn" data-dismiss="modal">Close</button> -->
+              <button type="button" class="mx-auto btn">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Ends Here -->
+      
+    </main>
+    <footer>
+      <!--? Footer Start-->
+      <div class="footer-area footer-bg">
+        <div class="container">
+          <div class="footer-top footer-padding">
+            <!-- footer Heading -->
+            <div class="footer-heading">
+              <div class="row justify-content-between">
+                <div class="col-xl-6 col-lg-8 col-md-8">
+                  <div class="wantToWork-caption wantToWork-caption2">
+                    <h2>You can add and view client stats here.</h2>
+                  </div>
+                </div>
+                <!-- <div class="col-xl-3 col-lg-4">
+                  <span class="contact-number f-right">+ 1 212-683-9756</span>
+                </div> -->
+              </div>
+            </div>
+            <!-- Footer Menu -->
+            <div class="row d-flex justify-content-between">
+              <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>BACK TO SITE</h4>
+                    <ul>
+                      <li><a href="../index.html"> Home</a></li>
+                      <li><a href="../about.html"> About Us</a></li>
+                      <li><a href="../services.html"> Services</a></li>
+                      <li><a href="../contact.html"> Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Open hour</h4>
+                    <ul>
+                      <li><a href="#">Monday 11am-7pm</a></li>
+                      <li><a href="#"> Tuesday-Friday 11am-8pm</a></li>
+                      <li><a href="#"> Saturday 10am-6pm</a></li>
+                      <li><a href="#"> Sunday 11am-6pm</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+              <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <!-- logo -->
+                  <div class="footer-logo">
+                    <a href="index.html"><img src="../assets/img/logo/GOxpressLogo.png" class="logo-sizer" alt=""></a>
+                  </div>
+                  <div class="footer-tittle">
+                    <div class="footer-pera">
+                      <p class="info1">GO-Xpress offers you unparalleled shipping possibilities. Our new extensive and efficient network provides you with highly optimized routes tailored to your needs.</p>
+                    </div>
+                  </div>
+                  <!-- Footer Social -->
+                  <div class="footer-social ">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-12">
+                <div class="footer-copy-right text-center">
+                  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <a href="#" target="_blank">GO-Xpress</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End-->
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top" >
+      <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- JS here -->
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="../assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="../assets/js/jquery.slicknav.min.js"></script>
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/animated.headline.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/jquery.sticky.js"></script>
+    
+    <!-- contact js -->
+    <script src="../assets/js/contact.js"></script>
+    <script src="../assets/js/jquery.form.js"></script>
+    <script src="../assets/js/jquery.validate.min.js"></script>
+    <script src="../assets/js/mail-script.js"></script>
+    <script src="../assets/js/jquery.ajaxchimp.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+    
+  </body>
+</html>
